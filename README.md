@@ -1,5 +1,7 @@
 <h1> Netflix</h1>
-<h3> Projeto realizado para o bootcamp do banco Inter - Início - 21/01/2022 - Concluído - 24/01/2022 </h3>
+<h3> Projeto realizado para o bootcamp do banco Inter
+  <br />
+Início - 21/01/2022 - Conclusão - 24/01/2022 </h3>
 
 <!-- TABLE OF CONTENTS -->
 <details>
