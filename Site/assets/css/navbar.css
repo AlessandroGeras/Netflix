@@ -1,0 +1,186 @@
+/*########## NavBar ##########*/
+
+.nav_start {height:50px;
+background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+background-size:100% 200%;
+background-position:0% 0%;
+position:fixed;}
+
+.nav_normal {
+animation: normal_background 1s;
+animation-fill-mode: forwards;}
+
+.nav_transparent{
+  animation: transparent_background 1s;
+  animation-fill-mode: forwards;}
+
+#leftnavbar {float:left; 
+  max-width: calc(2.5% + 70px); /*Cálculo para o logo diminuir menos que o normal*/ 
+  height:100%;
+  display: flex;
+  align-items: center;  
+  padding:0 0 0 30px;
+}
+
+#leftnavbar > img {width:100%;}
+
+#list_inicio {color:white;padding:0 5px 0 0}
+
+#middlenavbar{float:left; 
+  width:50%;
+  height:100%;
+  display: flex;
+  align-items: center; 
+}
+
+#middlenavbar > ul {overflow:hidden;
+  font-size: clamp(0.85rem, 1.5vw, 1.0rem); /*text min size,active size, max size*/}
+  
+.navleft {float:left;}
+
+#middlenavbar > ul > li > a {display:block; 
+  color:white;}
+
+#middlenavbar > ul > li {padding: 0 16px 0 0}
+    
+#middlenavbar > ul > li > a:hover{color:gray}
+  
+#middlenavbar > ul > li > hr { border: 0;
+background: #333;
+background-image: linear-gradient(to right, #ccc, #333, #ccc);}
+
+#middlenavbar_responsive {display:none;}
+
+#middlenavbar_responsive > #arrow_inicio > img {margin:0}
+
+#menu_inicio {background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+width:150px;
+position:absolute;
+left:60px;
+top:50px;
+visibility: hidden;
+opacity: 0; 
+transition: opacity 1000ms, visibility 1000ms;
+z-index: 1;}
+
+#arrow_inicio:hover ~ #menu_inicio {visibility: visible; /*Hover container brother element*/
+  opacity: 1;}
+
+#menu_inicio:hover {visibility: visible;
+    opacity: 1;}
+
+#menu_inicio > ul {display:block;margin:auto}
+
+#menu_inicio > ul {color:white;text-align:center;padding:0;margin-top: 0}
+
+#menu_inicio > ul > li {padding: 16px 0 16px 0}
+
+#menu_inicio > ul > li > a {color:white}
+
+#menu_inicio > ul > li:hover {background:gray;}
+
+#searchnavbar{float:right;
+  position:relative;
+  left:7px;
+  max-width: 5%;
+  height:100%;      
+  display: flex;
+  align-items: center;
+  color:white;
+  font-size: clamp(0.85rem, 1.5vw, 1.0rem); /*text min size,active size, max size*/
+}
+
+#search_input {width:0px;
+  padding:0;
+  border:0;
+  line-height: 25px;
+  font-size: clamp(0.57rem, 1.5vw, 1.35rem);
+  text-align: center;
+  border-radius: 40px;
+  transform:  translate(-100%,0%);
+  margin-left: -40%;
+  transition:1s;}
+
+#rightnavbar{
+  float:right;
+  max-width: calc(5% + 100px);
+  margin-right:5%;
+  height:100%;      
+  display: flex;
+  align-items: center;
+  color:white;
+  font-size: clamp(0.85rem, 1.5vw, 1.0rem); /*text min size,active size, max size*/
+}
+
+#faceicon_group {display:flex;align-items: center;}
+
+#arrow_icon {width:12.5px;margin-left:2.5px}
+
+#search_icon {width:25%}
+
+#bell_icon {width:30%;}
+
+.face_icon {max-width:35px;margin-left:-25%}
+
+#movie_genre {width:100%;margin-left:-32.5%}
+
+.navbar_align {width:100%;}
+
+.navbar_align > a {color:white;}
+
+.navbar_align > a:hover {color:gray;}
+
+#perfil {background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+width:150px;
+padding:0 0 5px 10px;
+position:absolute;
+top:50px;
+right:7%;
+visibility: hidden;
+opacity: 0; 
+transition: opacity 1000ms, visibility 1000ms;}
+
+#arrow_perfil:hover ~ #perfil {visibility: visible; /*Hover container brother element*/
+  opacity: 1;}
+
+.arrowlink_rotate180,.arrowinicio_rotate180 {animation: arrowlink-rotate180 0.5s;
+  animation-fill-mode: both;}
+  
+.arrowlink_rotate0,.arrowinicio_rotate0 {animation: arrowlink-rotate0 0.5s; 
+  animation-fill-mode: both;}
+
+.navbar_align > #arrow_perfil {margin-left: 5px;}
+
+.navbar_align > #arrow_perfil > img {margin:0;}
+
+#perfil:hover {visibility: visible;
+  opacity: 1;}
+
+#table1 {padding:5px 5px 2.5px 4.25px;}
+
+#table2 {padding:5px 5px 2.5px 0px;}
+
+#table1, #table2 {color: white;
+  text-shadow: 2px 2px 4px #000000;}
+
+#table3 {color:white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black}
+
+.tableformat td:nth-child(1) {text-align: center;}
+
+.tableformat td:nth-child(2) {text-align: left;}
+
+tr:hover {text-decoration: underline;}
+
+hr {margin-left:-6.5%}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type = "text/javascript" src="assets/js/javascript.js"></script> 
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animation.css">    
+    <link rel="stylesheet" type="text/css" href="assets/css/backdrop.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mobile.css">     
+    <link rel="stylesheet" type="text/css" href="assets/css/carrousel.css">  
+       
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+      <title>
+      Responsive HTML & CSS by Alessandro Geras
+      </title>
+  </head>
+<body>
+
+  
+  <!--########## NavBar ########## -->
+
+<section>
+<nav id="navbar" class="nav_start">    
+    <div id = "leftnavbar">
+      <img src="assets/images/netflix-logo.png">
+    </div> 
+      
+    <div id = "middlenavbar">
+      <ul class="list" id="listclick">
+        <li class="navleft"><b>Início</b></li>
+        <li class="navleft"><a href="#">Séries</a></li>
+        <li class="navleft"><a href="#">Filmes</a></li>
+        <li class="navleft"><a href="#">Bombando</a></li>
+        <li class="navleft"><a href="#">Minha Lista</a></li>    
+       </ul>
+       <div id="middlenavbar_responsive">
+        <ul>
+          <li id="list_inicio"><b>Início</b></li>
+        </ul>
+        <a class="arrowinicio" id="arrow_inicio" onmouseenter="arrowinicioenter()" onmouseleave="arrowinicioleave()"><img id="arrow_icon" src="assets/images/arrow-icon.png"></a>
+        <div id="menu_inicio" onmouseenter="arrowinicioenter()" onmouseleave="arrowinicioleave()">
+          <ul>
+            <li><a href="#">Séries</a></li>
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Bombando</a></li>
+            <li><a href="#">Minha Lista</a></li>
+          </ul>
+         </div>    
+      </div>
+    </div>   
+    
+    <div id = "rightnavbar">  
+      <div class="navbar_align">        
+        <a href="#"><p id="movie_genre">Infantil</p></a>
+      </div>
+      <div class="navbar_align">        
+        <a href="#"><img id="bell_icon" src="assets/images/bell-icon.png"></a>
+      </div>
+      <div class="navbar_align" id="faceicon_group">        
+        <img class="face_icon" id="face_icon_navbar" src="assets/images/face-icon.png">
+        <a class="arrowperfil" id="arrow_perfil" onmouseenter="arrowlinkenter()" onmouseleave="arrowlinkleave()"><img id="arrow_icon" src="assets/images/arrow-icon.png"></a>
+        <div id="perfil" onmouseenter="arrowlinkenter()" onmouseleave="arrowlinkleave()">
+          <table id="table1" class="tableformat">
+            <tr>
+              <td><img class="face_icon" src="assets/images/face-icon.png"></td><td>Perfil 1</td>
+            </tr>
+            <tr>
+              <td><img class="face_icon" src="assets/images/face2-icon.png"></td><td>Perfil 2</td>
+            </tr>                           
+          </table>
+          <table id="table2">
+            <tr>
+              <td>Gerenciar Perfis</td>
+             </tr>                         
+           </table>
+           <hr>
+          <table id="table3">
+             <tr>
+               <td>Conta</td>
+            </tr>
+            <tr>
+              <td>Centro de ajuda</td>
+             </tr>
+            <tr>
+              <td>Sair da Netflix</td>
+             </tr>                        
+           </table>
+         </div>    
+      </div>      
+    </div>  
+
+    <div id = "searchnavbar"> 
+      <img id="search_icon" src="assets/images/search-icon.png" onmouseenter="searchinput()" onclick="searchinput()"> 
+      <input id="search_input"type="text" name="" placeholder="Títulos, gente e gênero">
+    </div>
+</nav>
+</section>
+
+
+<!--########## Backdrop ########## -->
+
+<section>
+<div id="backdrop">    
+  <img id="backdrop_img">  
+  <div id="movie_info">     
+   <div id="movie_title">
+    <div id="back">     
+    </div>
+    <div id="front">     
+    </div> 
+    <div id="button_play" class="play_button" onmouseenter="playbuttonenter()" onmouseleave="playbuttonleave()">
+      <a><img src="assets/images/play.png">
+       <h3>Assistir</h3></a>
+    </div>  
+    <div id="button_info" class="info_button" onmouseenter="infobuttonenter()" onmouseleave="infobuttonleave()">
+      <a><img src="assets/images/info-icon.png">
+       <h3>Mais Informações</h3></a>
+    </div>         
+  </div>
+    <div id="backdrop_h2_container">
+      <h2 id="backdrop_h2"></h2>
+    </div>        
+  </div>  
+  <div id="recomendado"><h2>Recomendados para você</h2>    
+  </div>  
+</div>
+</section>
+
+
+<!--########## Carrousel ########## -->
+
+<div id="carrousel">
+  <section id="section1">
+    <a href="#section3" class="arrow__carrousel">‹</a>
+    <div class="item">
+    <img src="#">
+    <h3></h3>
+    <h4></h4>
+  </div>
+    <div class="item">
+    <img src="#">
+    <h3></h3>
+    <h4></h4>
+  </div>
+    <div class="item">
+    <img src="#">
+    <h3></h3>
+    <h4></h4>
+  </div>
+    <div class="item">
+    <img src="#">
+    <h3></h3>
+    <h4></h4>
+  </div>
+    <div class="item">
+    <img src="#">
+    <h3></h3>
+    <h4></h4>
+  </div>
+    <a href="#section2" class="arrow__carrousel">›</a>
+  </section>
+  <section id="section2">
+    <a href="#section1" class="arrow__carrousel">‹</a>
+    <div class="item">
+      <img src="#">
+      <h3></h3>
+      <h4></h4>
+  </div>
+    <div class="item">
+      <img src="#">
+      <h3></h3>
+      <h4></h4>
+  </div>
+    <div class="item">
+      <img src="#">
+      <h3></h3>
+      <h4></h4>
+  </div>
+    <div class="item">
+      <img src="#">
+      <h3></h3>
+      <h4></h4>
+  </div>
+    <div class="item">
+      <img src="#">
+      <h3></h3>
+      <h4></h4>
+  </div>
+    <a href="#section3" class="arrow__carrousel">›</a>
+  </section>
+  <section id="section3">
+    <a href="#section2" class="arrow__carrousel">‹</a>
+    <div class="item">
+      <img src="#">
+      <h3></h3>
+      <h4></h4>
+  </div>
+    <div class="item">
+      <img src="#">
+      <h3></h3>
+      <h4></h4>
+  </div>
+    <div class="item">
+      <img src="#">
+      <h3></h3>
+      <h4></h4>
+  </div>
+    <div class="item">
+      <img src="#">
+      <h3></h3>
+      <h4></h4>
+  </div>
+    <div class="item">
+     <img src="#">
+     <h3></h3>
+     <h4></h4>
+  </div>
+    <a href="#section1" class="arrow__carrousel">›</a>
+  </section>
+</div>
+
+
+<script>getmovie()</script>
+
+
+</body>
+</html>
