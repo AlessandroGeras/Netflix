@@ -34,7 +34,6 @@ Eu estava criando o meu próprio Carrousel, ia ser um desafio pessoal pois eu am
 Com tristeza no coração peguei um template na internet. Só não fiquei totalmente triste porque tive que adaptar quase todo ele pros meus fins e quase senti que eu estava criando, eu mesmo, o Carrousel. Ele tinha sido feito em SCSS e eu não manjo nada de SCSS, mas vi que a semântica não é drasticamente tão diferente do CSS, então resolvi transformar tudo pra CSS só pelo desafio mesmo de manter o padrão do meu trabalho que era tudo CSS e estudar o SCSS. E por fim como esperado, fiz a integração no Carrousel.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
-<hr>
 <h2 name="conclusão">Conclusão</h2>
 Foi bem divertido fazer o projeto, queria ter feito mais coisas mas a essência já está montada. Fazer mais, seria fazer mais do mesmo. Agora, rumo à outros projetos 💪  
 
