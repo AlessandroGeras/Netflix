@@ -9,6 +9,7 @@
     <li><a href="#navbar">Navbar</a></li>
     <li><a href="#main">Main(Backdrop)</a></li>
     <li><a href="#carrousel">Carrousel</a></li>
+    <li><a href="#mobile">Mobile</a></li>
     <li><a href="#conclusão">Conclusão</a></li>
   </ol>
 </details>
@@ -33,6 +34,12 @@ Outra coisa que faltou era um breve resumo do filme, como a Netflix tem, para se
 <h2 name="carrousel"> Carrousel </h2>
 Eu estava criando o meu próprio Carrousel, ia ser um desafio pessoal pois eu amo desafios, mas um colega me disse uma vez, pra que reinventar a roda? Tanta gente usa Bootstrap e templates, faz o mesmo :thinking:  
 Com tristeza no coração peguei um template na internet. Só não fiquei totalmente triste porque tive que adaptar quase todo ele pros meus fins e quase senti que eu estava criando, eu mesmo, o Carrousel. Ele tinha sido feito em SCSS e eu não manjo nada de SCSS, mas vi que a semântica não é drasticamente tão diferente do CSS, então resolvi transformar tudo pra CSS só pelo desafio mesmo de manter o padrão do meu trabalho que era tudo CSS e estudar o SCSS. E por fim como esperado, fiz a integração no Carrousel.
+<p align="right">(<a href="#indice">voltar ao indice</a>)</p>
+
+<h2 name="mobile">Mobile </h2>
+#Testado em todas as configurações padrões mobile do DevTools.  
+<br />
+#Personalizado alguns layouts exclusivos para certas configurações.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="conclusão">Conclusão</h2>
