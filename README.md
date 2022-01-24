@@ -13,16 +13,16 @@
   </ol>
 </details>
 <h2 name="projeto"> Sobre o projeto  </h2>
-Fiz este projeto em 3 dias, sem saber nada de javascript. Foram momentos de muita pesquisa, aprendizado e manutenção de código. Estou orgulhoso de mim mesmo por aprender javascript e entender o que é uma api, e no segundo dia já fazer fetch e consumir a api e integrá-la no meu frontend. E eu até então só fazia sites com html e css e achava bom pois tinha medo de aprender javascript por achar difícil. Agora só tenho uma coisa a dizer. "I miss you javascript" :smiling_face_with_three_hearts: 
-<br>    
-<br>   
+Fiz este projeto em 3 dias, sem saber nada de javascript. Foram momentos de muita pesquisa, aprendizado e manutenção de código. Estou orgulhoso de mim mesmo por aprender javascript e entender o que é uma api, e no segundo dia já fazer fetch e consumir a api e integrá-la no meu frontend. E eu até então só fazia sites com html e css e achava bom pois tinha medo de aprender javascript por achar difícil. Agora só tenho uma coisa a dizer. "I miss you javascript" :smiling_face_with_three_hearts:   
+<br /><br />
 
-Comentários sobre o meu próprio projeto. Fiz melhorias e piorias em relação ao Netflix. As melhorias foram coisas que eu não concordei e quis fazer do meu jeito e as piorias foram coisas simples que eu poderia fazer igual e quis mudar pra ser diferente e pode não ter ficado tão bom quanto o original :laughing:  
+Comentários sobre o meu próprio projeto. Fiz melhorias e piorias em relação ao Netflix. As melhorias foram coisas que eu não concordei e quis fazer do meu jeito e as piorias foram coisas simples que eu poderia fazer igual e quis mudar pra ser diferente e pode não ter ficado tão bom quanto o original :laughing:
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="navbar"> Navbar  </h2>
 A Navbar do Netflix é muita estranha, parece que fizeram no Bootstrap e meteram um danê-se, fica assim mesmo. Na minha família tenho pessoas com problema de visão e a Navbar não fica bem visível em pequenos dispositivos para elas. Então como o CSS não tem <code>min-width</code> para fontes, como para outros elementos, fiz um clamp nas fontes. Deixei o logo com um min-width pra não escalonar tanto pois é a marca principal do site, ela não pode sumir como some no original. E tomei vergonha na cara e escalonei o ícone de perfil que no original escalona mal, chega a ser absurdo de proporção em relação aos elementos ao redor dele. Fiz as animações das setas nos menus, botão de search e na transparência da Navbar quando o scroll move e como pioria fiz glassmorphism nos menus. Deixou o site um pouco travado mas estou ciente disso, sou balaqueiro mesmo. :laughing:  
-Fiz com que a Navbar ficasse um pouco maior que o padrão normal para pequenos mobiles pensando na minha família :smiling_face_with_three_hearts: 
+<br /><br />
+Fiz com que a Navbar ficasse um pouco maior que o padrão normal para pequenos mobiles pensando na minha família :smiling_face_with_three_hearts:
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="main"> Main (Backdrop) </h2>
@@ -38,9 +38,11 @@ Com tristeza no coração peguei um template na internet. Só não fiquei totalm
 <h2 name="conclusão">Conclusão</h2>
 Foi bem divertido fazer o projeto, queria ter feito mais coisas mas a essência já está montada. Fazer mais, seria fazer mais do mesmo. Agora, rumo à outros projetos 💪  
 
-<h3>Tecnologias usadas:</h3>  
+<h3>Tecnologias usadas:</h3>
+#html
+<br />
 #css
-<br>
+<br />
 #js
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
