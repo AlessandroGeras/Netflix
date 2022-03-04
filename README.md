@@ -13,6 +13,7 @@ Início - 21/01/2022 - Conclusão - 24/01/2022 </h3>
     <li><a href="#carrousel">Carrousel</a></li>
     <li><a href="#mobile">Mobile</a></li>
     <li><a href="#conclusão">Conclusão</a></li>
+    <li><a href="#link">Projeto online</a></li>
   </ol>
 </details>
 <h2 name="projeto"> Sobre o projeto  </h2>
@@ -54,4 +55,7 @@ Foi bem divertido fazer o projeto, queria ter feito mais coisas mas a essência 
 <br />
 #js
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p> 
+
+<h2 name="link">Projeto online</h2>
+https://alessandrogeras.github.io/Netflix/
 
