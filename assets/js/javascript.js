@@ -74,17 +74,7 @@ function getmovie() {
         section3_title[x].innerHTML = showjson.results[x + section2_img.length * 2 + 1].title;
       }
 
-      carrousel.style.visibility = "visible";
-
-      /* Real-time check for the mouse position to make Navbar fading effect */
-      window.addEventListener("scroll", function () {
-        let navbar = document.getElementById("navbar");
-        if (window.pageYOffset > 10) {
-          navbar.className = "nav_start nav_normal";
-        } else {
-          navbar.className = "nav_start nav_transparent";
-        }
-      });
+      carrousel.style.visibility = "visible";      
     });
 }
 
@@ -179,3 +169,13 @@ function search_input() {
     right_navbar.style.display = "flex";
   }
 }
+
+/* Real-time check for the mouse position to make Navbar fading effect */
+window.addEventListener("scroll", function () {
+  let navbar = document.getElementById("navbar");
+  if (window.pageYOffset > 10) {
+    navbar.className = "nav_start nav_normal";
+  } else {
+    navbar.className = "nav_start nav_transparent";
+  }
+});
