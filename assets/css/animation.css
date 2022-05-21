@@ -1,3 +1,4 @@
+/* Fading Navbar animation from Navbar */
 @keyframes transparent_background  {
   0%   {background-position:0% 0%}
   100% {background-position:0% 100%}
@@ -8,9 +9,7 @@
   100% {background-position:0% 0%}
 }
 
-
-
-
+/* Login Arrow Animation from Navbar*/
 @keyframes arrowlink-rotate180 {
   0%   {transform: rotate(0deg);}
   100% {transform: rotate(180deg);}

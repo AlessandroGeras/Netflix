@@ -1,232 +1,256 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type = "text/javascript" src="assets/js/javascript.js"></script> 
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/animation.css">    
-    <link rel="stylesheet" type="text/css" href="assets/css/backdrop.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/mobile.css">     
-    <link rel="stylesheet" type="text/css" href="assets/css/carrousel.css">  
-       
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-      <title>
-      Responsive HTML & CSS by Alessandro Geras
-      </title>
+    <!-- External Files - Javascript and CSS -->
+    <script type="text/javascript" src="assets/js/javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animation.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/backdrop.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/carrousel.css" />
+
+    <!-- External Files - Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"/>
+    <title>Responsive HTML & CSS by Alessandro Geras</title>
   </head>
-<body>
+  <body>
 
-  
-  <!--########## NavBar ########## -->
+    <!-- ########## NAVBAR ########## -->
+    <!-- NavBar - The Navbar is divided into three parts, Left, Middle and Right - Using navbar.css -->
+    <section>
+      <nav id="navbar" class="nav_start">
 
-<section>
-<nav id="navbar" class="nav_start">    
-    <div id = "leftnavbar">
-      <img src="assets/images/netflix-logo.png">
-    </div> 
-      
-    <div id = "middlenavbar">
-      <ul class="list" id="listclick">
-        <li class="navleft"><b>Início</b></li>
-        <li class="navleft"><a href="#">Séries</a></li>
-        <li class="navleft"><a href="#">Filmes</a></li>
-        <li class="navleft"><a href="#">Bombando</a></li>
-        <li class="navleft"><a href="#">Minha Lista</a></li>    
-       </ul>
-       <div id="middlenavbar_responsive">
-        <ul>
-          <li id="list_inicio"><b>Início</b></li>
-        </ul>
-        <a class="arrowinicio" id="arrow_inicio" onmouseenter="arrowinicioenter()" onmouseleave="arrowinicioleave()"><img id="arrow_icon" src="assets/images/arrow-icon.png"></a>
-        <div id="menu_inicio" onmouseenter="arrowinicioenter()" onmouseleave="arrowinicioleave()">
-          <ul>
-            <li><a href="#">Séries</a></li>
-            <li><a href="#">Filmes</a></li>
-            <li><a href="#">Bombando</a></li>
-            <li><a href="#">Minha Lista</a></li>
+        <!-- NavBar - Left Navbar - Netflix Logo -->
+        <div id="left_navbar">
+          <img src="assets/images/netflix-logo.png" />
+        </div>
+
+        <!-- NavBar - Middle Navbar - Menus -->
+        <div id="middle_navbar">
+          <ul class="list" id="listclick">
+            <li class="navleft"><b>Início</b></li>
+            <li class="navleft"><a href="#">Séries</a></li>
+            <li class="navleft"><a href="#">Filmes</a></li>
+            <li class="navleft"><a href="#">Bombando</a></li>
+            <li class="navleft"><a href="#">Minha Lista</a></li>
           </ul>
-         </div>    
-      </div>
-    </div>   
-    
-    <div id = "rightnavbar">  
-      <div class="navbar_align">        
-        <a href="#"><p id="movie_genre">Infantil</p></a>
-      </div>
-      <div class="navbar_align">        
-        <a href="#"><img id="bell_icon" src="assets/images/bell-icon.png"></a>
-      </div>
-      <div class="navbar_align" id="faceicon_group">        
-        <img class="face_icon" id="face_icon_navbar" src="assets/images/face-icon.png">
-        <a class="arrowperfil" id="arrow_perfil" onmouseenter="arrowlinkenter()" onmouseleave="arrowlinkleave()"><img id="arrow_icon" src="assets/images/arrow-icon.png"></a>
-        <div id="perfil" onmouseenter="arrowlinkenter()" onmouseleave="arrowlinkleave()">
-          <table id="table1" class="tableformat">
-            <tr>
-              <td><img class="face_icon" src="assets/images/face-icon.png"></td><td>Perfil 1</td>
-            </tr>
-            <tr>
-              <td><img class="face_icon" src="assets/images/face2-icon.png"></td><td>Perfil 2</td>
-            </tr>                           
-          </table>
-          <table id="table2">
-            <tr>
-              <td>Gerenciar Perfis</td>
-             </tr>                         
-           </table>
-           <hr>
-          <table id="table3">
-             <tr>
-               <td>Conta</td>
-            </tr>
-            <tr>
-              <td>Centro de ajuda</td>
-             </tr>
-            <tr>
-              <td>Sair da Netflix</td>
-             </tr>                        
-           </table>
-         </div>    
-      </div>      
-    </div>  
+          <!-- NavBar - Mobile Middle Navbar - Menus -->
+          <div id="middlenavbar_responsive">
+            <ul>
+              <li id="list_start"><b>Início</b></li>
+            </ul>
+            <a id="arrow_start" onmouseenter="arrow_start_enter()" onmouseleave="arrow_start_leave()">
+              <img id="arrow_icon" src="assets/images/arrow-icon.png"/>
+            </a>
+            <div id="menu_start" onmouseenter="arrow_start_enter()" onmouseleave="arrow_start_leave()">
+              <ul>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Bombando</a></li>
+                <li><a href="#">Minha Lista</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    <div id = "searchnavbar"> 
-      <img id="search_icon" src="assets/images/search-icon.png" onmouseenter="searchinput()" onclick="searchinput()"> 
-      <input id="search_input"type="text" name="" placeholder="Títulos, gente e gênero">
+        <!-- NavBar - Right Navbar - Search and Login Area -->
+        <div id="right_navbar">
+          <!-- NavBar - Right Navbar - Search and Login Area - Category -->
+          <div class="navbar_align">
+            <a href="#"><p id="movie_genre">Infantil</p></a>
+          </div>
+          <!-- NavBar - Right Navbar - Search and Login Area - Bell -->
+          <div class="navbar_align">
+            <a href="#"
+              ><img id="bell_icon" src="assets/images/bell-icon.png"
+            /></a>
+          </div>
+          <!-- NavBar - Right Navbar - Search and Login Area - Login -->
+          <div class="navbar_align" id="faceicon_group">
+            <img class="face_icon" id="face_icon_navbar" src="assets/images/face-icon.png"/>
+            <a id="arrow_perfil" onmouseenter="arrow_link_enter()" onmouseleave="arrow_link_leave()">
+              <img id="arrow_icon" src="assets/images/arrow-icon.png"/>
+            </a>
+            <!-- NavBar - Right Navbar - Search and Login Area - Login Dropdown -->
+            <div id="perfil" onmouseenter="arrow_link_enter()" onmouseleave="arrow_link_leave()">
+              <table id="login_dropdown_table1" class="tableformat">
+                <tr>
+                  <td>
+                    <img class="face_icon" src="assets/images/face-icon.png" />
+                  </td>
+                  <td>Perfil 1</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img class="face_icon" src="assets/images/face2-icon.png" />
+                  </td>
+                  <td>Perfil 2</td>
+                </tr>
+              </table>
+              <table id="login_dropdown_table2">
+                <tr>
+                  <td>Gerenciar Perfis</td>
+                </tr>
+              </table>
+              <hr />
+              <table id="login_dropdown_table3">
+                <tr>
+                  <td>Conta</td>
+                </tr>
+                <tr>
+                  <td>Centro de ajuda</td>
+                </tr>
+                <tr>
+                  <td>Sair da Netflix</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- NavBar - Right Navbar - Search and Login Area - Search -->
+        <div id="search_navbar">
+          <img id="search_icon" src="assets/images/search-icon.png" onmouseenter="search_input()" onclick="search_input()"/>
+          <input id="search_input" type="text" name="" placeholder="Títulos, gente e gênero"/>
+        </div>
+      </nav>
+    </section>
+
+    <!-- ########## BACKDROP ########## -->
+    <!-- Backdrop - The Backdrop is the middle zone with the main image, movie title, preview movie info and buttons - Using backdrop.css -->
+    <section>
+      <div id="backdrop">
+        <!-- Backdrop - Main Image and Movie Title -->
+        <img id="backdrop_img" />
+        <div id="movie_info">
+          <div id="movie_title">
+            <div id="back"></div>
+            <div id="front"></div>
+            <!-- Backdrop - Buttons - Play Button -->
+            <div id="button_play" class="play_button" onmouseenter="playbutton_enter()" onmouseleave="playbutton_leave()">
+              <a>
+                <img src="assets/images/play.png" />
+                <h3>Assistir</h3>
+              </a>
+            </div>
+            <!-- Backdrop - Buttons - Info Button -->
+            <div id="button_info" class="info_button" onmouseenter="infobutton_enter()" onmouseleave="infobutton_leave()">
+              <a>
+                <img src="assets/images/info-icon.png" />
+                <h3>Mais Informações</h3>
+              </a>
+            </div>
+          </div>
+           <!-- Backdrop - Preview Movie Info -->
+          <div id="backdrop_h2_container">
+            <h2 id="backdrop_h2"></h2>
+          </div>
+        </div>
+        <div id="recommended"><h2>Recomendados para você</h2></div>
+      </div>
+    </section>
+
+    <!-- ########## CARROUSEL ########## -->
+    <!-- Carrousel - Using carrousel.css -->
+    <div id="carrousel">
+      <section id="section1">
+        <a href="#section3" class="arrow_carrousel">‹</a>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <a href="#section2" class="arrow_carrousel">›</a>
+      </section>
+      <section id="section2">
+        <a href="#section1" class="arrow_carrousel">‹</a>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <a href="#section3" class="arrow_carrousel">›</a>
+      </section>
+      <section id="section3">
+        <a href="#section2" class="arrow_carrousel">‹</a>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="item">
+          <img src="#" />
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <a href="#section1" class="arrow_carrousel">›</a>
+      </section>
     </div>
-</nav>
-</section>
 
-
-<!--########## Backdrop ########## -->
-
-<section>
-<div id="backdrop">    
-  <img id="backdrop_img">  
-  <div id="movie_info">     
-   <div id="movie_title">
-    <div id="back">     
-    </div>
-    <div id="front">     
-    </div> 
-    <div id="button_play" class="play_button" onmouseenter="playbuttonenter()" onmouseleave="playbuttonleave()">
-      <a><img src="assets/images/play.png">
-       <h3>Assistir</h3></a>
-    </div>  
-    <div id="button_info" class="info_button" onmouseenter="infobuttonenter()" onmouseleave="infobuttonleave()">
-      <a><img src="assets/images/info-icon.png">
-       <h3>Mais Informações</h3></a>
-    </div>         
-  </div>
-    <div id="backdrop_h2_container">
-      <h2 id="backdrop_h2"></h2>
-    </div>        
-  </div>  
-  <div id="recomendado"><h2>Recomendados para você</h2>    
-  </div>  
-</div>
-</section>
-
-
-<!--########## Carrousel ########## -->
-
-<div id="carrousel">
-  <section id="section1">
-    <a href="#section3" class="arrow_carrousel">‹</a>
-    <div class="item">
-    <img src="#">
-    <h3></h3>
-    <h4></h4>
-  </div>
-    <div class="item">
-    <img src="#">
-    <h3></h3>
-    <h4></h4>
-  </div>
-    <div class="item">
-    <img src="#">
-    <h3></h3>
-    <h4></h4>
-  </div>
-    <div class="item">
-    <img src="#">
-    <h3></h3>
-    <h4></h4>
-  </div>
-    <div class="item">
-    <img src="#">
-    <h3></h3>
-    <h4></h4>
-  </div>
-    <a href="#section2" class="arrow_carrousel">›</a>
-  </section>
-  <section id="section2">
-    <a href="#section1" class="arrow_carrousel">‹</a>
-    <div class="item">
-      <img src="#">
-      <h3></h3>
-      <h4></h4>
-  </div>
-    <div class="item">
-      <img src="#">
-      <h3></h3>
-      <h4></h4>
-  </div>
-    <div class="item">
-      <img src="#">
-      <h3></h3>
-      <h4></h4>
-  </div>
-    <div class="item">
-      <img src="#">
-      <h3></h3>
-      <h4></h4>
-  </div>
-    <div class="item">
-      <img src="#">
-      <h3></h3>
-      <h4></h4>
-  </div>
-    <a href="#section3" class="arrow_carrousel">›</a>
-  </section>
-  <section id="section3">
-    <a href="#section2" class="arrow_carrousel">‹</a>
-    <div class="item">
-      <img src="#">
-      <h3></h3>
-      <h4></h4>
-  </div>
-    <div class="item">
-      <img src="#">
-      <h3></h3>
-      <h4></h4>
-  </div>
-    <div class="item">
-      <img src="#">
-      <h3></h3>
-      <h4></h4>
-  </div>
-    <div class="item">
-      <img src="#">
-      <h3></h3>
-      <h4></h4>
-  </div>
-    <div class="item">
-     <img src="#">
-     <h3></h3>
-     <h4></h4>
-  </div>
-    <a href="#section1" class="arrow_carrousel">›</a>
-  </section>
-</div>
-
-
-<script>getmovie()</script>
-
-
-</body>
+     <!-- Update Movies Info by Fetch -->
+    <script>
+      getmovie();
+    </script>
+  </body>
 </html>
